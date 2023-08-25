@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+    url('../assets/fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url('/assets/fonts/roboto-thin-webfont.woff2') format('woff2'),
+    url('/assets/fonts/roboto-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-family: 'robotoregular';
+}
+
+:root {
+  --black: #000506;
+  --blue: #132D46;
+  --aqua: #01C38D;
+  --gray: #696E79;
+  --white: #F5F5FA;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.mainContainer {
+  padding: 2em;
+}
+
+.mainInitials {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'robotomedium';
+  font-size: 2.5rem;
+  color: var(--aqua);
+}
+
+.mainInitials img {
+  width: 50px
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  padding: 0 1.5em;
+}
+
+.hamburgerMenu {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.navbarList {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'robotomedium';
+}
+
+.navbarItem {
+  margin: 0 1em;
+  padding: 1em;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.navbarItem:hover {
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--aqua);
+}
+
+.titleSection {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 4.5rem;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 992px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .navbarList {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 576px) {}

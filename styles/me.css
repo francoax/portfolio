@@ -1,0 +1,42 @@
+.meContainer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 85vh;
+  color: var(--white);
+  font-family: 'robotomedium';
+}
+
+.hi {
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 1.9em;
+}
+
+.name {
+  color: var(--aqua);
+}
+
+.dev {
+  margin-bottom: 1em;
+  font-size: 2.9em;
+}
+
+.paragraph {
+  max-width: 650px;
+  line-height: 1.2rem;
+}
+
+.meInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.meImage {
+  width: 200px;
+  height: 250px;
+}
