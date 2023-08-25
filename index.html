@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/me.css">
   <link rel="stylesheet" href="./styles/proyects.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/about.css">
   <script src="index.js"></script>
   <title>Portfolio</title>
 </head>
@@ -15,10 +17,10 @@
     <a href="#" class="mainInitials"><img src="assets/icons/astronaut.svg" alt="astronaut">FD</a>
     <nav class="navbar">
       <ul class="navbarList">
-        <li class="navbarItem">Inicio</li>
-        <li class="navbarItem">Acerca de mi</li>
+        <li id="homeBtn" class="navbarItem">Inicio</li>
+        <li id="aboutBtn" class="navbarItem">Acerca de mi</li>
         <li id="proyectBtn" class="navbarItem">Proyectos</li>
-        <li class="navbarItem">Contactame</li>
+        <li id="contactBtn" class="navbarItem">Contactame</li>
       </ul>
     </nav>
     <img class="hamburgerMenu" src="assets/icons/hamburger-icon.png" alt="Hamburger menu icon">
@@ -28,12 +30,18 @@
       <div class="meInfo">
         <span class="hi">Hola</span>
         <h1 class="title">Soy <span class="name">Franco Duarte</span></h1>
-        <span class="dev">Desarrollador web FullStack</span>
+        <span class="dev">Desarrollador web Full Stack</span>
         <p class="paragraph">
-          ...ademas estudiante de Ingenieria en Sistemas de Informacion en la UTN de Rosario. <br>
+          ...ademas estudiante de Ingenieria en Sistemas de Informacion en la Universidad Tecnologica Nacional de Rosario. <br>
         </p>
       </div>
       <img class="meImage" src="assets/icons/astronaut.svg" alt="astronaut">
+    </section>
+    <section class="aboutContainer">
+      <h2 class="titleSection">Acerca de mi</h2>
+      <div class="information">
+        <p></p>
+      </div>
     </section>
     <section class="proyectsContainer">
       <h2 class="titleSection">Proyectos</h2>
@@ -113,9 +121,28 @@
         </div>
       </div>
     </section>
-    <section class="knownsContainer">
+    <section class="contactContainer">
       <h2 class="titleSection">Contactame</h2>
-      <div>
+      <div class="contactInformation">
+        <p class="incentive">Si te interesa trabajar conmigo, no dudes en contactarme</p>
+        <div class="social">
+          <div class="socialItem">
+            <img class="socialIcon" src="assets/icons/linkedin-icon.svg" alt="linkedin icon">
+            <p>linkedin.com/in/francoduarteti</p>
+          </div>
+          <div class="socialItem">
+            <img class="socialIcon" src="assets/icons/whatsapp-icon.svg" alt="linkedin icon">
+            <p>3412767803</p>
+          </div>
+          <div class="socialItem">
+            <img class="socialIcon" src="assets/icons/instagram-icon.svg" alt="instagram icon">
+            <p>@frankoduarte_</p>
+          </div>
+          <div class="socialItem">
+            <img class="socialIcon" src="assets/icons/email-icon.svg" alt="linkedin icon">
+            <p>francoa.duarte2001@gmail.com</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

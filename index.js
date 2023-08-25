@@ -1,9 +1,18 @@
 window.onload = () => {
-  const proyectsContainer = document.querySelector('.proyectsContainer');
-  const proyectBtn = document.getElementById('proyectBtn');
+  const btns = ['homeBtn', 'aboutBtn', 'proyectBtn', 'contactBtn']
 
-  proyectBtn.addEventListener('click', () => {
-    proyectsContainer.scrollIntoView({ behavior: "smooth"})
-  })
+  const containers = {
+    homeBtn : '.meContainer',
+    aboutBtn : '.aboutContainer',
+    proyectBtn : '.proyectsContainer',
+    contactBtn : '.contactContainer'
+  }
+
+  btns.forEach(btn => {
+    const btnElement = document.getElementById(btn)
+    btnElement.addEventListener('click', () => {
+      document.querySelector(containers[btn]).scrollIntoView({behavior : 'smooth'})
+    })
+  });
 }
 

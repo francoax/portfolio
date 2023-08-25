@@ -1,0 +1,31 @@
+.contactContainer {
+  min-height: 35vh;
+  color: var(--white);
+}
+
+.incentive {
+  margin-bottom: 2.2em;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 200px;
+}
+
+.socialItem p {
+  font-weight: 600;
+}
+
+.socialIcon {
+  width: 75px;
+}
