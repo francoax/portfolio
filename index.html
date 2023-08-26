@@ -9,21 +9,22 @@
   <link rel="stylesheet" href="./styles/proyects.css">
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="./styles/about.css">
-  <script src="index.js"></script>
   <title>Portfolio</title>
 </head>
 <body>
   <header class="header">
     <a href="#" class="mainInitials"><img src="assets/icons/astronaut.svg" alt="astronaut">FD</a>
-    <nav class="navbar">
-      <ul class="navbarList">
+    <nav class="navbar" role="navigation">
+      <a href="">
+        <img class="hamburgerMenu" src="assets/icons/hamburger-icon.png" alt="Hamburger menu icon">
+      </a>
+      <ul id="menu" class="navbarList">
         <li id="homeBtn" class="navbarItem">Inicio</li>
         <li id="aboutBtn" class="navbarItem">Acerca de mi</li>
         <li id="proyectBtn" class="navbarItem">Proyectos</li>
         <li id="contactBtn" class="navbarItem">Contactame</li>
       </ul>
     </nav>
-    <img class="hamburgerMenu" src="assets/icons/hamburger-icon.png" alt="Hamburger menu icon">
   </header>
   <main class="mainContainer">
     <section class="meContainer">
@@ -40,7 +41,28 @@
     <section class="aboutContainer">
       <h2 class="titleSection">Acerca de mi</h2>
       <div class="information">
-        <p></p>
+        <p>
+          Soy estudiante de Ingenieria en Sistemas, a poco nada mas de finalizar tercer año. Ya son mas de dos años
+          en el que estoy involucrado en el desarrollo web, desde el estudio por mi cuenta hasta participando de cursos
+          de capacitacion. <br>
+          Actualmente me encuentro enfocado en mi carrera como tambien en el aprovechar mi tiempo libre
+          para estudiar mas sobre el mundo del desarrollo. <br> <br>
+          Podria decir que disfruto mucho programar, el tomar problemas complejos y darles una solucion con
+          todo el detalle posible y que éste sea bien recibido por quienes lo solicitan, ya que asi puedo darme cuenta
+          que estoy realizando un buen trabajo. <br> <br>
+          Encuentro al feedback como algo muy importante y es lo primero que siempre espero recibir, porque me permite
+          saber tanto los errores como buenas acciones de mi y me ayuda a poder brindar un mejor servicio para los
+          demas. <br>
+          Me percibo como una persona sin dificultades para adaptarse a un entorno de trabajo, como tambien resalto mi capacidad
+          para poder aprender rapido lo que se me presente.
+          <br> <br>
+          En cuanto a mis conocimientos, he desarrollado tanto frontend como backend, utilizando frameworks conocidos
+          como Angular y React principalmente en front y NodeJs y .NET para backend. Soy alguien mas que puede tirarse a
+          backend, ya que la logica y desarrollo de una API Restful me encanta y todo desafio que se me imponga en esto,
+          lo persigo hasta completarlo, pero no encuentro ninguna dificultad en realizar ambos. <br> <br>
+          Respecto a experiencias, las estoy desarrollando por mi cuenta, realizando mini-proyectos, donde analizo, diseño
+          y desarrollo la aplicacion yo mismo, entrevistando y realizando la documentacion necesaria para el mismo.
+        </p>
       </div>
     </section>
     <section class="proyectsContainer">
@@ -124,7 +146,7 @@
     <section class="contactContainer">
       <h2 class="titleSection">Contactame</h2>
       <div class="contactInformation">
-        <p class="incentive">Si te interesa trabajar conmigo, no dudes en contactarme</p>
+        <p class="incentive">Si te interesa trabajar conmigo, no dudes en contactarme.</p>
         <div class="social">
           <div class="socialItem">
             <img class="socialIcon" src="assets/icons/linkedin-icon.svg" alt="linkedin icon">
@@ -148,5 +170,6 @@
   </main>
   <footer>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

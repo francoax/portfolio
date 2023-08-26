@@ -97,7 +97,7 @@ body {
 .titleSection {
   margin-bottom: 0.5em;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: var(--white);
 }
 
@@ -108,9 +108,11 @@ body {
     display: none;
   }
 
+  .titleSection {
+    font-size: 4.5rem;
+  }
+
   .navbarList {
     display: flex;
   }
 }
-
-@media only screen and (min-width: 576px) {}

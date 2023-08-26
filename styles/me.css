@@ -1,7 +1,9 @@
 .meContainer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   min-height: 85vh;
+  padding-top: 8%;
   color: var(--white);
   font-family: 'robotomedium';
 }
@@ -36,6 +38,12 @@
 }
 
 .meImage {
-  width: 200px;
-  height: 250px;
+  width: 400px;
+  height: 450px;
+}
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 992px) {
+  
 }
