@@ -39,10 +39,6 @@ body {
   background-color: var(--black);
 }
 
-.mainContainer {
-  padding: 2em;
-}
-
 .mainInitials {
   display: flex;
   align-items: center;

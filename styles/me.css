@@ -34,7 +34,7 @@
 .meInfo {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 15px;
 }
 
 .meImage {

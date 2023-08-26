@@ -8,6 +8,7 @@
 }
 
 .information p {
+  padding: 15px;
   text-align: justify;
   line-height: 1.8rem;
   font-size: 1.3rem;
