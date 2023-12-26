@@ -23,17 +23,23 @@
         <li id="aboutBtn" class="navbarItem">Acerca de mi</li>
         <li id="proyectBtn" class="navbarItem">Proyectos</li>
         <li id="contactBtn" class="navbarItem">Contactame</li>
+        <li id="changeLang">
+          <img src="assets/icons/argentina-flag-icon.svg" alt="argentine icon for language">
+          <div>
+            <input type="checkbox" id="switch" onclick="return false;" /><label data-lang="spanish" id="labelSwitch" for="switch">Toggle</label>
+          </div>
+          <img src="assets/icons/united-states-flag-icon.svg" alt="usa icon for language">
+        </li>
       </ul>
     </nav>
   </header>
   <main class="mainContainer">
     <section class="meContainer">
       <div class="meInfo">
-        <span class="hi">Hola</span>
-        <h1 class="title">Soy <span class="name">Franco Duarte</span></h1>
-        <span class="dev">Desarrollador web Full Stack</span>
+        <span class="hi"></span>
+        <h1 class="title"></h1>
+        <span class="dev"></span>
         <p class="paragraph">
-          ...ademas estudiante de Ingenieria en Sistemas de Informacion en la Universidad Tecnologica Nacional de Rosario. <br>
         </p>
       </div>
       <img class="meImage" src="assets/icons/astronaut.svg" alt="astronaut">
@@ -170,6 +176,6 @@
   </main>
   <footer>
   </footer>
-  <script src="index.js"></script>
+  <script type="module" src="index.js"></script>
 </body>
 </html>
