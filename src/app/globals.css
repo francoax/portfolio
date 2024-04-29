@@ -6,6 +6,7 @@
   --foreground-rgb: 217, 217, 217;
   --background-start-rgb: 29, 30, 38;
   --background-end-rgb: 29, 30, 38;
+  --fdred: #e35454;
 }
 
 body {
