@@ -5,6 +5,7 @@ import { NavBar } from "@/ui/navbar/navbar";
 import ParticlesComp from "@/ui/particles";
 import ArrowNavigator from "@/ui/arrow-navigator";
 import { Suspense } from "react";
+import Footer from "@/ui/footer";
 
 export const metadata: Metadata = {
   title: "Franco Duarte",
@@ -25,7 +26,8 @@ export default function RootLayout({
         <div className="relative z-10">
           <NavBar />
           {children}
-          <ArrowNavigator />
+          {/* <ArrowNavigator /> */}
+          <Footer />
         </div>
       </body>
     </html>

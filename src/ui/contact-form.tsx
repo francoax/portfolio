@@ -1,55 +1,82 @@
 export default function ContactForm() {
   return (
     <form>
-      <div className="space-y-12">
+      <div className="space-y-12 sm:min-w-[600px]">
         <div className="rounded-md backdrop-blur-sm bg-slate-400/15 p-6 border-[.5px] border-slate-200/15 pb-12">
           <h2 className="text-base font-semibold leading-7">Informacion de contacto</h2>
 
-          <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3">
+          <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-12">
+            <div className="sm:col-span-6">
               <label htmlFor="first-name" className="block text-sm font-medium leading-6">
-                Organizacion
+                Nombre
+                <span className="text-red-500">*</span>
               </label>
               <div className="mt-2">
                 <input
                   type="text"
                   name="first-name"
                   id="first-name"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
-            <div className="sm:col-span-3">
+            <div className="sm:col-span-6">
               <label htmlFor="last-name" className="block text-sm font-medium leading-6">
-                Nombre y apellido
+                Apellido
                 <span className="text-red-500">*</span>
               </label>
               <div className="mt-2">
                 <input
-                  type="text"
-                  name="last-name"
                   id="last-name"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  name="last-name"
+                  type="text"
+                  placeholder="job@mail.com"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
-            <div className="sm:col-span-4">
+            <div className="sm:col-span-full">
               <label htmlFor="email" className="block text-sm font-medium leading-6">
                 Email
                 <span className="text-red-500">*</span>
               </label>
               <div className="mt-2">
                 <input
-                  id="email"
-                  name="email"
                   type="email"
-                  autoComplete="email"
-                  placeholder="job@mail.com"
-                  className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  name="email"
+                  id="email"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-6">
+              <label htmlFor="company" className="block text-sm font-medium leading-6">
+                Organizacion
+                <span className="text-red-500">*</span>
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-6">
+              <label htmlFor="site" className="block text-sm font-medium leading-6">
+                Pagina web
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="site"
+                  id="site"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -82,7 +109,7 @@ export default function ContactForm() {
                   id="about"
                   name="about"
                   rows={3}
-                  className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  className="text-indigo-950 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                   defaultValue={''}
                 />
               </div>

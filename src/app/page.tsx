@@ -5,11 +5,12 @@ import Project from "@/ui/project";
 import Skill from "@/ui/skill";
 import Image from "next/image";
 import ContactForm from "@/ui/contact-form";
+import Course from "@/ui/course";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <Section name="inicio" className="py-20 space-y-8">
+    <main className="flex min-h-screen flex-col gap-24">
+      <Section name="inicio" className="space-y-8">
         <div className="flex flex-col items-center">
           <h1 className="text-8xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">Franco Duarte</h1>
           <p className="font-light text-lg border-b-2 border-slate-200/10">
@@ -87,7 +88,7 @@ export default function Home() {
             website="https://website.com"
           />
           <Project
-            company="Proximamente..."
+            company="Proxima experiencia..."
           />
         </div>
       </Section>
@@ -213,6 +214,57 @@ export default function Home() {
               <div>
                 <span>Trabajo en equipo</span>
               </div>
+              <div>
+                <span>Aprendizaje rapido</span>
+              </div>
+            </div>
+          </Skill>
+          <Skill title="Cursos" className="col-span-full">
+            <div className="flex flex-col gap-y-5 mt-5">
+              <Course
+                name="Bootcamp Desarrollador Web"
+                company="Radium Rocket"
+                role="Full Stack Developer"
+                time="Marzo 2023 - Junio 2023"
+                description={
+                  <>
+                    <p>
+                      Bootcamp intensivo, donde se abarcaron temas desde los conceptos basicos de desarrollo web, hasta la creacion de aplicaciones web completas.
+                      Todo el curso se desarrollo aplicando la metodologia agil {"SCRUM"}, en equipos que se alternaban en cada sprint.
+                      <br />
+                      El proyecto final fue una aplicacion para un gimnasio, donde se podian registrar usuarios, como tambien los entrenadores podian tener un registro de sus clases con sus alumnos y un panel de administracion completo.
+                      <br />
+                      Aprendimos y utilizamos las siguientes tecnologias:
+                    </p>
+                    <ul className="list-disc list-inside flex gap-x-10 my-2">
+                      <li>React</li>
+                      <li>Redux</li>
+                      <li>NodeJS</li>
+                      <li>Express</li>
+                      <li>MongoDB</li>
+                      <li>Mongoose</li>
+                    </ul>
+                  </>
+                }
+              />
+              <Course
+                name="Formacion en Desarrollo Full Stack GSC+UTN"
+                company="Grupo San Cristobal"
+                role="Full Stack Developer"
+                time="Agosto 2022 - Noviembre 2022"
+                description={
+                  <>
+                    <p>
+                      Tuve la oportunidad de participar en dicha formacion que se realizo en conjunto con la facultad a la que asisto y la empresa.
+                    </p>
+                    <ul className="list-disc list-inside flex gap-x-10 my-2">
+                      <li>.NET</li>
+                      <li>Angular</li>
+                      <li>SQLServer</li>
+                    </ul>
+                  </>
+                }
+              />
             </div>
           </Skill>
         </div>
@@ -222,7 +274,7 @@ export default function Home() {
           Contacto
         </h2>
         <div className="flex flex-col mt-12">
-          <p className="font-light text-lg mb-5">
+          <p className="font-light text-lg text-center mb-5">
             Si estas interesado en mi perfil, no dudes en contactarme.
           </p>
           <ContactForm />
