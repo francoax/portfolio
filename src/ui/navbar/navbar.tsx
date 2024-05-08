@@ -16,7 +16,7 @@ const navbarItems : {name: string, href?: string}[] = [
 export const NavBar = () => {
   
   return (
-    <nav className="sticky top-0 min-w-full backdrop-blur-sm flex items-center justify-between py-8 z-50">
+    <nav className="sticky top-0 min-w-full backdrop-blur-sm flex items-center justify-between py-4 z-50">
       <MeLogo />
       <ul className="[&>li]:capitalize [&>li]:cursor-pointer flex gap-12 relative">
         {navbarItems.map((item, index) => (

@@ -11,31 +11,37 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-24">
       <Section name="inicio" className="space-y-8">
-        <div className="flex flex-col items-center">
-          <h1 className="text-8xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">Franco Duarte</h1>
-          <p className="font-light text-lg border-b-2 border-slate-200/10">
-            <Highlight>Estudiante</Highlight> Ingenieria en Sistemas de Informacion || <Highlight>Desarrollador</Highlight> Web Full Stack, preferencia backend.
-          </p>
-        </div>
-        <div className="max-w-2xl rounded-md backdrop-blur-sm bg-slate-400/15 p-6 border-[.5px] border-slate-200/15">
-          <p className="text-pretty font-light">
-            Hola, soy Franco A. Duarte, estudiante de 4to año y desarrollador web con <Highlight>+1 año</Highlight> de experiencia construyendo aplicaciones web.
-            De lo que va mi trayecto, tuve la oportunidad de atravesar diversas areas, desde el desarrollo de aplicaciones web, hasta la <Highlight>administracion</Highlight> de bases de datos.
-            <Highlight>Continuamente exploro</Highlight> nuevas tecnologias y practicas de desarrollo para mejorar mis habilidades y conocimientos.
-            <br />
-            <br />
-            Mi <Highlight>objetivo</Highlight> es el crecimiento personal y profesional, y la creacion de soluciones que aporten un valor unico.
-          </p>
-        </div>
-        <div className="flex items-center gap-5">
-          <GitHubIcon />
-          <LinkedinIcon />
-        </div>
+          <div className="flex flex-col self-start">
+            <h1 className="text-8xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">Franco Duarte</h1>
+            <p className="font-light text-lg border-b-2 border-slate-200/10">
+              <Highlight>Estudiante</Highlight> Ingenieria en Sistemas de Informacion || <Highlight>Desarrollador</Highlight> Web Full Stack, preferencia backend.
+            </p>
+          </div>
+          <div className="self-start">
+            <div className="max-w-2xl rounded-md backdrop-blur-sm bg-slate-400/15 p-6 border-[.5px] border-slate-200/15">
+              <p className="text-pretty font-light">
+                Hola, soy Franco A. Duarte, estudiante de 4to año y desarrollador web con <Highlight>+1 año</Highlight> de experiencia construyendo aplicaciones web.
+                De lo que va mi trayecto, tuve la oportunidad de atravesar diversas areas, desde el desarrollo de aplicaciones web, hasta la <Highlight>administracion</Highlight> de bases de datos.
+                <Highlight>Continuamente exploro</Highlight> nuevas tecnologias y practicas de desarrollo para mejorar mis habilidades y conocimientos.
+                <br />
+                <br />
+                Mi <Highlight>objetivo</Highlight> es el crecimiento personal y profesional, y la creacion de soluciones que aporten un valor unico.
+              </p>
+            </div>
+            <div className="flex items-center gap-5 mt-5">
+              <GitHubIcon />
+              <LinkedinIcon />
+            </div>
+          </div>
       </Section>
       <Section name="experiencia">
-        <h2 className="text-7xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">
+        <h2 className="self-start text-7xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">
           Experiencia
         </h2>
+        <div className="h-2 w-full border-b-2 border-slate-200/10"></div>
+        <p className="self-start text-slate-500">
+          Incluye tanto proyectos propios como empresas en las que trabaje. Presento un resumen de las distintas actividades que realice.
+        </p>
         <div className="grid grid-cols-2 gap-5 w-full mt-12">
           <Project
             company="T&T S.H."
@@ -93,9 +99,13 @@ export default function Home() {
         </div>
       </Section>
       <Section name="conocimientos">
-        <h2 className="text-7xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">
+        <h2 className="self-start text-7xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-700 text-transparent bg-clip-text">
             Conocimientos
         </h2>
+        <div className="h-2 w-full border-b-2 border-slate-200/10"></div>
+        <p className="self-start text-slate-500">
+          Mi stack de tecnologias y habilidades que fui adquiriendo a lo largo del tiempo.
+        </p>
         <div className="grid grid-cols-3 gap-12 w-full mt-12">
           <Skill title="Frontend">
             <div className="flex flex-wrap gap-5 justify-evenly [&>div]:flex [&>div]:items-center [&>div]:gap-2 [&>div]:my-2">
@@ -219,7 +229,7 @@ export default function Home() {
               </div>
             </div>
           </Skill>
-          <Skill title="Cursos" className="col-span-full">
+          <Skill title="Cursos" className="col-span-full hover:scale-100">
             <div className="flex flex-col gap-y-5 mt-5">
               <Course
                 name="Bootcamp Desarrollador Web"
