@@ -4,7 +4,7 @@ import { Highlight } from "./minors";
 
 export default function Footer() {
   return (
-    <footer className="backdrop-blur-sm h-[55vh] mt-[50vh] text-slate-400 relative">
+    <footer className="backdrop-blur-sm h-[45vh] mt-[25vh] text-slate-400 relative">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-b from-transparent to-slate-400/25"></div>
       <div className="flex flex-col gap-y-14 p-12">
         <div className="space-y-5">
